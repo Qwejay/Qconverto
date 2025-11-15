@@ -1,0 +1,24 @@
+# 基础依赖
+PyQt5>=5.15.0
+# Pillow用于主要的图片处理功能
+Pillow>=8.0.0
+
+# PDF处理依赖
+# PyMuPDF用于PDF处理功能
+PyMuPDF>=1.18.0
+
+# 音频处理依赖
+# pydub用于主要的音频格式转换功能
+pydub>=0.25.0
+# miniaudio作为pydub不可用时的备选方案
+miniaudio>=1.0.0
+
+# 文档处理依赖
+docx2pdf>=0.1.7
+
+# 视频处理依赖
+ffmpeg-python>=0.2.0  # 用于直接调用FFmpeg进行视频处理
+moviepy>=1.0.3  # 作为ffmpeg-python不可用时的备选方案
+
+# Windows特定依赖
+pywin32>=227
