@@ -1448,9 +1448,9 @@ atexit.register(app_instance.cleanup_temp_files)
 
 # 运行应用
 if __name__ == '__main__':
-    # 获取环境变量中的端口，如果没有则使用默认端口8081
+    # 获取Railway提供的端口，如果不存在则使用默认端口
     import os
-    port = int(os.environ.get("PORT", 8081))
+    port = int(os.environ.get('PORT', 8081))
     
     ui.run(
         title='Qconverto - 多媒体文件格式转换工具',
@@ -1458,5 +1458,5 @@ if __name__ == '__main__':
         favicon='icon.svg',
         dark=False,
         port=port,
-        host="0.0.0.0"  # 绑定到所有接口以支持云部署
+        host='0.0.0.0'  # 监听所有网络接口，这对于Railway部署很重要
     )

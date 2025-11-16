@@ -20,5 +20,7 @@ pdf2docx>=0.5.6
 ffmpeg-python>=0.2.0  # 用于直接调用FFmpeg进行视频处理
 moviepy>=1.0.3  # 作为ffmpeg-python不可用时的备选方案
 
-# Windows特定依赖
-pywin32>=227
+# Web框架依赖
+nicegui>=1.0.0
+
+# 移除了Windows特定依赖，因为Railway运行在Linux环境
